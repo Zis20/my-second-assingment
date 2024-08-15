@@ -9,3 +9,7 @@
 }
 
 /* default-styles */
+.display-flex{
+    display: flex;
+}
+
