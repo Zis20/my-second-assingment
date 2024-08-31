@@ -648,4 +648,7 @@ select:focus {
     flex-direction: column;
     gap: 2rem;
   }
+  .copyrights{
+    text-align: start;
+  }
 }
