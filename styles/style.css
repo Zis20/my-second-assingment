@@ -531,33 +531,33 @@ select:focus {
   }
   .mobile-icon {
     display: block;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .banner {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .banner-title{
+  .banner-title {
     font-size: 3rem;
   }
-  .Miama{
+  .Miama {
     font-size: 8rem;
   }
-  .Miama-2{
+  .Miama-2 {
     font-size: 6rem;
   }
   .banner-container {
-   width: 100%;
+    width: 100%;
   }
   .banner-btn {
     display: flex;
-}
-  
+  }
+
   .banner-images {
     width: 100%;
   }
   .banner {
-   margin-top: 2rem;
+    margin-top: 2rem;
   }
   .workout-count {
     right: -21px;
@@ -579,10 +579,14 @@ select:focus {
   .join {
     flex-direction: column;
   }
+  .join-image {
+    height: 12.5rem;
+  }
   .join-now {
     width: 100%;
     margin-bottom: 2rem;
   }
+
   .join-image {
     width: 100%;
   }
@@ -612,5 +616,36 @@ select:focus {
   }
   .john-img {
     margin-bottom: 2rem;
+  }
+
+  .join-section {
+    margin-top: 1.5rem;
+  }
+  .habit-container {
+    margin-top: -5.5rem;
+  }
+  .bmi-heading {
+    margin-top: 2rem;
+  }
+  .BMI {
+    margin-top: 1.5rem;
+  }
+  .unique-one {
+    margin-top: 1.5rem;
+  }
+  .team {
+    margin-top: 3rem;
+  }
+  .team-members {
+    margin-top: -2rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
