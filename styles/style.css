@@ -95,16 +95,26 @@ footer {
 }
 nav ul {
   align-items: center;
+  border: 1px solid rgba(92, 92, 92, 0.171);
+  border-radius: 2.2rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding: 0.2rem;
+ 
 }
 
 nav ul li {
   list-style: none;
   margin-right: 2.8rem;
+  
 }
 
 nav li a {
   text-decoration: none;
   color: #ffffff;
+}
+.home-btn{
+  padding: 0.4rem 1.2rem;
 }
 
 /* nav end */
@@ -158,7 +168,7 @@ nav li a {
 }
 
 .second-button {
-  padding: 20px 23px 20px 25px;
+ padding: 1rem;
   border-radius: 0.75rem;
   color: #ffffff;
   border-color: #ffffff;
@@ -199,8 +209,8 @@ nav li a {
 }
 
 .orange-icon {
-  width: 40px;
-  height: 40px;
+  width: 2.3rem;
+  height: 2.3rem;
   display: block;
   background-color: #e6533c;
   border-radius: 50%;
@@ -209,22 +219,25 @@ nav li a {
 .orange-icon-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .btn-1 {
   position: relative;
+ 
+  
 }
 .btn-2 {
   position: relative;
-}
+
+ }
+
+ 
 /* banner ends */
 
 /* main start */
 
 /* habit section starts */
-.habit-container {
-}
 .habit-head {
   max-width: 40rem;
   text-align: center;
@@ -384,7 +397,7 @@ nav li a {
   padding: 50px;
 }
 .motivation-description {
-  /* max-width: 27rem; */
+  max-width: 27rem;
 }
 .unique-description {
   font-size: 1rem;
@@ -463,11 +476,15 @@ footer {
   padding-bottom: 2rem;
   margin: 0 auto;
 }
-
+.brand-name{
+  font-size: 4.37rem;
+}
 .footer-element ul {
   list-style: none;
 }
-
+.footer-element ul li{
+  margin-bottom: 1rem;
+}
 .footer-element li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
@@ -559,6 +576,9 @@ select:focus {
   .banner {
     margin-top: 2rem;
   }
+  .gray-1{
+    text-align: start;
+  }
   .workout-count {
     right: -21px;
     bottom: 400px;
@@ -566,15 +586,19 @@ select:focus {
   .video-count {
     right: 200px;
     bottom: 230px;
+
   }
   .habits {
     flex-direction: column;
+
   }
 
   .habit {
     width: 100%;
     margin-top: 1rem;
   }
+
+  
 
   .join {
     flex-direction: column;
@@ -651,4 +675,5 @@ select:focus {
   .copyrights{
     text-align: start;
   }
+
 }
