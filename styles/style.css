@@ -66,16 +66,17 @@ footer {
 }
 
 .header {
-  background-color: rgba(17, 17, 17, 1);
+  /* background-color: rgba(17, 17, 17, 1); */
+  background-image: linear-gradient(black, rgba(51, 57, 59, 0.5));
   padding-top: 5rem;
   margin-bottom: 100px;
+  position: relative;
 }
 
 /* navigation */
 
 .nav-title {
   font-size: 2.25rem;
-  
 }
 
 .nav-bar {
@@ -99,9 +100,8 @@ nav li a {
 /* nav end */
 
 /* banner styles */
-.banner{
+.banner {
   justify-content: space-between;
-  
 }
 .banner-container {
   max-width: 37rem;
@@ -150,6 +150,7 @@ nav li a {
   margin-left: 0.8rem;
   background-color: rgba(48, 48, 48, 0.54);
   border-style: none;
+  position: absolute;
 }
 
 .gray-1 {
@@ -204,7 +205,6 @@ nav li a {
 /* habit section starts */
 .habit-container {
   max-width: 65rem;
- 
 }
 .habit-head {
   max-width: 40rem;
@@ -220,115 +220,215 @@ nav li a {
   margin-bottom: 3.5rem;
 }
 
-.habits{
-   text-align: center;
+.habits {
+  text-align: center;
 }
 
 .habits img {
   max-width: 11rem;
   border-radius: 50%;
 }
-.habit{
-    max-width: 14rem;
-    margin: 0 auto 0 auto;
+.habit {
+  max-width: 14rem;
+  margin: 0 auto 0 auto;
 }
 
-.img-title{
-   font-weight: 600; 
-   font-size: 1.1rem;
+.img-title {
+  font-weight: 600;
+  font-size: 1.1rem;
   text-align: center;
   margin-top: 1.8rem;
   margin-bottom: 0.2rem;
 }
-.img-description{
-    text-align: center;
-
+.img-description {
+  text-align: center;
 }
 /* habit section end */
 
 /* Run an Extra mile starts */
 
-.join-now{
+.join-now {
   max-width: 27rem;
 }
-.join-image{
-
+.join-image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 1.1rem;
 }
-.join{
+.join-image{
+  height: 20rem;
+  width: 27rem;
+ 
+}
+
+.join {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem;
 }
+
+.join-description{
+margin-bottom: 2rem;
+
+}
+.join-title{
+  margin-bottom: 0.8rem;
+}
+/* Run an Extra mile end */
+
 /* bmi start */
-.calculate-bmi{
-justify-content: space-between;
-align-items: center;
-margin-top: 1rem;
+.calculate-bmi {
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 2.5rem;
 }
-.bmi-heading{
- text-align: start;
- max-width: 35rem;
- margin: 0 auto;
+.bmi-heading {
+  text-align: start;
+  max-width: 35rem;
+  margin: 0 auto;
 }
-.bmi-calculation-form{
+.bmi-calculation-form {
   max-width: 500px;
 }
-.chart-title{
-  font-weight: 800;
-  font-size: 1.5rem;
+.chart-title {
+  font-weight: 900;
+  font-size: 1.75rem;
 }
 
-.bmi-description{
+.bmi-description {
   font-size: 0.75rem;
   font-weight: normal;
   margin-top: 3px;
-}
-
-.bmi-chart-table th{
-font-size: 0.8rem;
-font-weight: 400;
-text-align: center;
-}
-.bmi-chart-table td{
-  font-size: 12px;
-  text-align: center;
   
 }
 
-.form-heading{
+.bmi-chart-table th {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: start;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+ 
+}
+.bmi-chart-table{
+  border-collapse: collapse;
+  margin-top: 3.25rem;
+  
+}
+
+.bmi-chart-table td {
+  font-size: 12px;
+  text-align: start;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+
+.form-heading {
   max-width: 36rem;
   margin-bottom: 2rem;
 }
-.form-title{
-  font-size: 1.3rem;
+.form-title {
+  font-size: 1.75rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
-.form-description{
+.form-description {
   font-weight: normal;
   font-size: 0.8rem;
 }
-.form-btn{
+.form-btn {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 1rem;
-  }
-
+}
 
 /* bmi end */
 
-/* Run an Extra mile end */
+/* uniq section start */
+.unique-one{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient( rgba(224, 168, 168, 0.5),black);
+  border-radius: 30%;
+  padding: 50px;
+}
+.motivation-description{
+  max-width: 27rem;
+}
+.unique-description{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 1rem;
+}
+.unique-title{
+  font-weight: 900;
+  font-size: 3rem;
+}
+.john-img img{
+  max-width: 20rem;
+  border-radius: 50%;
+}
+/* uniq section end */
 
+/* Meet Our Team start */
+.name {
+  color: white;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+.post {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+}
+.about-team {
+  max-width: 40rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.trainer-intro img{
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+.trainer-intro {
+ position: relative;
+}
+.t-d {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 
+.row {
+  display: flex;
+  height: 17rem;
+ gap: 1.25rem;
+}
+.row-2{
+  margin: 1.25rem;
+}
+.team-members{
+  background-color: rgba(255, 255, 255, 0.10);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+/* Meet Our Team end */
 
 /* footers styles */
+
+footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .footer-element ul li {
   list-style: none;
-
-  
 }
+
 .footer-element li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
@@ -341,21 +441,20 @@ text-align: center;
   justify-content: space-around;
   margin-bottom: 2rem;
 }
-.footer-element{
+.footer-element {
   max-width: 27rem;
 }
-.contacts-title{
+.contacts-title {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-hr{
+hr {
   border-color: rgba(255, 255, 255, 0.5);
-  
 }
-.copyrights{
- text-align: center;
- margin: 2rem auto;
- font-weight: normal;
- font-size: 1.25rem;
+.copyrights {
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: normal;
+  font-size: 1.25rem;
 }
