@@ -4,6 +4,15 @@
   font-family: myFont;
   src: url(../Miama.ttf);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0.5rem;
+}
 
 .inter-normal {
   font-family: "Inter", sans-serif;
@@ -15,6 +24,7 @@
 /* default-styles */
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: black;
@@ -56,7 +66,7 @@ footer {
   background-color: #e6533c;
   font-weight: 600;
   font-size: 1rem;
-  padding: 0.5rem 1.13rem;
+  padding: 0.75rem 1.13rem;
   border-radius: 2.5rem;
   border-style: none;
   color: #ffffff;
@@ -70,7 +80,6 @@ footer {
   background-image: linear-gradient(black, rgba(51, 57, 59, 0.5));
   padding-top: 5rem;
   margin-bottom: 100px;
-  position: relative;
 }
 
 /* navigation */
@@ -82,6 +91,7 @@ footer {
 .nav-bar {
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 nav ul {
   align-items: center;
@@ -102,14 +112,19 @@ nav li a {
 /* banner styles */
 .banner {
   justify-content: space-between;
-}
-.banner-container {
-  max-width: 37rem;
-  padding-right: 5rem;
+  /* height: 36.25rem; */
   margin-top: 6rem;
 }
+.banner-container {
+  width: 50%;
+}
+.banner-images {
+  width: 50%;
+}
 .banner-image {
-  width: 20rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .banner-title {
   font-weight: black;
@@ -133,7 +148,7 @@ nav li a {
 .Download-button {
   font-weight: 600;
   font-size: 1rem;
-  padding: 0.5rem 1.13rem;
+  padding: 0.75rem 1.13rem;
   border-radius: 2.5rem;
   color: #ffffff;
   border-width: 1px;
@@ -147,10 +162,17 @@ nav li a {
   border-radius: 0.75rem;
   color: #ffffff;
   border-color: #ffffff;
-  margin-left: 0.8rem;
   background-color: rgba(48, 48, 48, 0.54);
   border-style: none;
   position: absolute;
+}
+.workout-count {
+  right: -35px;
+  bottom: 340px;
+}
+.video-count {
+  right: 250px;
+  bottom: 60px;
 }
 
 .gray-1 {
@@ -191,12 +213,10 @@ nav li a {
 }
 
 .btn-1 {
-  margin-top: -175px;
-  margin-left: -110px;
+  position: relative;
 }
 .btn-2 {
-  margin-top: -355px;
-  margin-left: 240px;
+  position: relative;
 }
 /* banner ends */
 
@@ -204,7 +224,6 @@ nav li a {
 
 /* habit section starts */
 .habit-container {
-  max-width: 65rem;
 }
 .habit-head {
   max-width: 40rem;
@@ -221,16 +240,20 @@ nav li a {
 }
 
 .habits {
-  text-align: center;
+  justify-content: space-between;
 }
 
 .habits img {
   max-width: 11rem;
   border-radius: 50%;
+  border: 4px solid rgb(56, 56, 56);
 }
 .habit {
-  max-width: 14rem;
-  margin: 0 auto 0 auto;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-title {
@@ -250,35 +273,38 @@ nav li a {
 .join-now {
   max-width: 27rem;
 }
-.join-image img{
+.join-image img {
   height: 100%;
   width: 100%;
   border-radius: 1.1rem;
 }
-.join-image{
+.join-image {
   height: 20rem;
   width: 27rem;
- 
 }
 
 .join {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem;
 }
 
-.join-description{
-margin-bottom: 2rem;
-
+.join-description {
+  margin-bottom: 2rem;
 }
-.join-title{
+.join-title {
   margin-bottom: 0.8rem;
 }
 /* Run an Extra mile end */
 
 /* bmi start */
+.BMI {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+}
+
 .calculate-bmi {
   justify-content: space-between;
   /* align-items: center; */
@@ -288,9 +314,10 @@ margin-bottom: 2rem;
   text-align: start;
   max-width: 35rem;
   margin: 0 auto;
+  margin-top: 5.5rem;
 }
 .bmi-calculation-form {
-  max-width: 500px;
+  width: 50%;
 }
 .chart-title {
   font-weight: 900;
@@ -301,7 +328,9 @@ margin-bottom: 2rem;
   font-size: 0.75rem;
   font-weight: normal;
   margin-top: 3px;
-  
+}
+.bmi-chart {
+  width: 33%;
 }
 
 .bmi-chart-table th {
@@ -310,12 +339,11 @@ margin-bottom: 2rem;
   text-align: start;
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 0.5rem;
- 
 }
-.bmi-chart-table{
+.bmi-chart-table {
   border-collapse: collapse;
   margin-top: 3.25rem;
-  
+  width: 100%;
 }
 
 .bmi-chart-table td {
@@ -347,29 +375,36 @@ margin-bottom: 2rem;
 /* bmi end */
 
 /* uniq section start */
-.unique-one{
+.unique-one {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient( rgba(224, 168, 168, 0.5),black);
+  background-image: linear-gradient(rgba(224, 168, 168, 0.5), black);
   border-radius: 30%;
   padding: 50px;
 }
-.motivation-description{
-  max-width: 27rem;
+.motivation-description {
+  /* max-width: 27rem; */
 }
-.unique-description{
+.unique-description {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 1rem;
 }
-.unique-title{
+.unique-title {
   font-weight: 900;
   font-size: 3rem;
 }
-.john-img img{
-  max-width: 20rem;
+.john-img img {
+  /* max-width: 20rem; */
   border-radius: 50%;
+}
+.Miama-2 {
+  font-family: myFont;
+  font-weight: normal;
+  font-size: 9rem;
+  display: inline-block;
+  line-height: 12px;
 }
 /* uniq section end */
 
@@ -389,13 +424,14 @@ margin-bottom: 2rem;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
-.trainer-intro img{
+.trainer-intro img {
   height: 100%;
   width: 100%;
   border-radius: 1rem;
+  object-fit: cover;
 }
 .trainer-intro {
- position: relative;
+  position: relative;
 }
 .t-d {
   position: absolute;
@@ -404,15 +440,13 @@ margin-bottom: 2rem;
 }
 
 .row {
-  display: flex;
-  height: 17rem;
- gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
 }
-.row-2{
-  margin: 1.25rem;
-}
-.team-members{
-  background-color: rgba(255, 255, 255, 0.10);
+
+.team-members {
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   padding: 1.25rem;
 }
@@ -424,8 +458,13 @@ margin-bottom: 2rem;
 footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
 
-.footer-element ul li {
+.footer-element ul {
   list-style: none;
 }
 
@@ -438,7 +477,7 @@ footer {
 }
 
 .main-footer {
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 2rem;
 }
 .footer-element {
@@ -454,7 +493,124 @@ hr {
 }
 .copyrights {
   text-align: center;
-  margin: 2rem auto;
   font-weight: normal;
   font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.input-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.input-form input,
+select {
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+}
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+input:focus,
+select:focus {
+  outline: 2px solid black;
+}
+
+.mobile-icon {
+  display: none;
+}
+/* responsive */
+
+@media only screen and (max-width: 576px) {
+  .hidden {
+    display: none;
+  }
+  .mobile-icon {
+    display: block;
+    color: #FFFFFF;
+  }
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .banner-title{
+    font-size: 3rem;
+  }
+  .Miama{
+    font-size: 8rem;
+  }
+  .Miama-2{
+    font-size: 6rem;
+  }
+  .banner-container {
+   width: 100%;
+  }
+  .banner-btn {
+    display: flex;
+}
+  
+  .banner-images {
+    width: 100%;
+  }
+  .banner {
+   margin-top: 2rem;
+  }
+  .workout-count {
+    right: -21px;
+    bottom: 400px;
+  }
+  .video-count {
+    right: 200px;
+    bottom: 230px;
+  }
+  .habits {
+    flex-direction: column;
+  }
+
+  .habit {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .join {
+    flex-direction: column;
+  }
+  .join-now {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .join-image {
+    width: 100%;
+  }
+  .btn-style {
+    width: 100%;
+  }
+  .calculate-bmi {
+    flex-direction: column;
+  }
+  .bmi-calculation-form {
+    width: 100%;
+  }
+  .bmi-chart {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .bmi-chart-table {
+    width: 100%;
+  }
+  .row {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .unique-one {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .john-img {
+    margin-bottom: 2rem;
+  }
 }
